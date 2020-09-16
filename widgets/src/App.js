@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordian from './components/Accordion';
 import Search from './components/Search';
+import Translate from './components/Translate';
+import Route from './components/Route';
+import Dropdown from './components/Dropdown';
+import Header from './components/Header';
 
 const items = [
   {
@@ -20,12 +24,57 @@ const items = [
   },
 ];
 
+const options = [
+  { label: 'The color red', value: 'red' },
+  { label: 'The color green', value: 'green' },
+  { label: 'The color blue', value: 'blue' },
+];
+
+// const showAccordian = () => {
+//   if (window.location.pathname === '/') {
+//     return <Accordian items={items} />;
+//   }
+// };
+
+// const showSearch = () => {
+//   if (window.location.pathname === '/search') {
+//     return <Search />;
+//   }
+// };
+
+// const showTranslate = () => {
+//   if (window.location.pathname === '/translate') {
+//     return <Translate />;
+//   }
+// };
+
 export default () => {
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [showDropdown, setDropdownStatus] = useState(true);
+  const [selected, setSelected] = useState(options[0]);
+
   return (
-    <div className="ui container">
-      <h1>Widgets App</h1>
-      {/* <Accordian items={items} /> */}
-      <Search />
+    <div>
+      <Header />
+      <div className="ui container">
+        <Route path="/">
+          <Accordian items={items} />
+        </Route>
+        <Route path="/search">
+          <Search />
+        </Route>
+        <Route path="/dropdown">
+          <Dropdown
+            label="Select a color"
+            selectedOption={selected}
+            selectionOptions={options}
+            onSelectedOptionChange={setSelected}
+          />
+        </Route>
+        <Route path="/translate">
+          <Translate />
+        </Route>
+      </div>
     </div>
   );
 };
