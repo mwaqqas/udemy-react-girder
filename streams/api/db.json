@@ -1,0 +1,22 @@
+{
+  "streams": [
+    {
+      "title": "My Stream",
+      "description": "This is a good stream",
+      "userId": "114140734194359912713",
+      "id": 1
+    },
+    {
+      "description": "PWN some n00bs",
+      "title": "Ninja plays Fortnite",
+      "userId": "123790423750294750098",
+      "id": 2
+    },
+    {
+      "title": "Serverless with SAM",
+      "description": "Deepdive into AWS Lambda and API Gateway",
+      "userId": "114140734194359912713",
+      "id": 3
+    }
+  ]
+}
