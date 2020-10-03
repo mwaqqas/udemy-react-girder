@@ -1,9 +1,8 @@
 {
   "streams": [
     {
-      "title": "My Stream",
+      "title": "Her Stream",
       "description": "This is a good stream",
-      "userId": "114140734194359912713",
       "id": 1
     },
     {
@@ -13,10 +12,43 @@
       "id": 2
     },
     {
-      "title": "Serverless with SAM",
+      "title": "Serverless with SAM 2",
       "description": "Deepdive into AWS Lambda and API Gateway",
-      "userId": "114140734194359912713",
       "id": 3
+    },
+    {
+      "title": "Create a react app in 2 hours",
+      "description": "hello world",
+      "userId": "114140734194359912713",
+      "id": 4
+    },
+    {
+      "title": "Game Night",
+      "description": "Playing Dixit with the peeps",
+      "userId": "114140734194359912713",
+      "id": 5
+    },
+    {
+      "title": "Liverpool vs Arsenal",
+      "description": "EPL game",
+      "userId": "114140734194359912713",
+      "id": 6
+    },
+    {
+      "title": "abc",
+      "description": "cds",
+      "userId": "114140734194359912713",
+      "id": 7
+    },
+    {
+      "userId": "114140734194359912713",
+      "id": 8
+    },
+    {
+      "title": "oipurtwn,mnwe,h",
+      "description": "q0928kjndsakgns",
+      "userId": "114140734194359912713",
+      "id": 9
     }
   ]
 }
