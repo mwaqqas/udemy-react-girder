@@ -36,7 +36,9 @@ class StreamList extends Component {
             <div className="right floated content">
               {this.renderAdminButtons(this.props.currentUserId, stream)}
             </div>
-            <div className="header">{stream.title}</div>
+            <div className="header">
+              <Link to={`/streams/${stream.id}`}>{stream.title}</Link>
+            </div>
             <div className="description">{stream.description}</div>
           </div>
         </div>
